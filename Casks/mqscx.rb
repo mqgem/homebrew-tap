@@ -1,9 +1,9 @@
 cask "mqscx" do                                                            
-  version "2026-10-26,10.0.0"                                                 
+  version "10.0.0,2026-10-26"
   sha256 "cc9c47c1fc4f76703658db4a0352e8f1db9bdf424b3ad5faaeaeb1c63b8f93d4"
-  url "https://www.mqgem.com/mqscx_downloads/mqscx_mac.dmg?v=#{version.csv.first}"   
+  url "https://www.mqgem.com/mqscx_downloads/mqscx_mac.dmg?v=#{version.csv.second}"   
   name "MQGem Software MQSCX"
-  desc "An advanced command-line administration tool for IBM MQ that improves upon the standard runmqsc interface with a powerful scripting language, command auto-completion, and superior data filtering."
+  desc "Extended MQSC administration tool for IBM MQ"
   homepage "https://www.mqgem.com/mqscx.html"
   depends_on arch: :arm64
   depends_on macos: ">= :ventura"                                            
