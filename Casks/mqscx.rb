@@ -6,7 +6,7 @@ cask "mqscx" do
   desc "Extended MQSC administration tool for IBM MQ"
   homepage "https://www.mqgem.com/mqscx.html"
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"                                            
+  depends_on macos: :ventura                                            
   binary "mqscx"
   caveats "Requires lic file from MQGem. Set MQGEML to reference your mqgem.lic file"
 end
