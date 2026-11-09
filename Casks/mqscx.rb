@@ -11,7 +11,7 @@ cask "mqscx" do
   caveats <<~EOS
     Requires licence file from MQGem. Set MQGEML to reference your mqgem.lic file.
   EOS
-  unless which("dspmqver")
+  unless File.exist?("/opt/mqm/bin/dspmqver")
     caveats <<~EOS
       
       Warning: IBM MQ macOS toolkit was not detected in your PATH. 
