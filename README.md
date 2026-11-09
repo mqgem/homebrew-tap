@@ -8,10 +8,11 @@ This is the official Homebrew Tap for [MQGem Software Limited](https://www.mqgem
 
 ## Installation
 
-To add this tap to your system and install the `mqscx` utility, open your terminal and run:
+Third-party repositories require explicit trust in modern Homebrew environments. To add this tap, authorize it, and install any of our utilities, execute the following commands in your terminal:
 
 ```bash
 brew tap mqgem/tap
+brew trust mqgem/tap
 brew install --cask mqscx
 ```
 
