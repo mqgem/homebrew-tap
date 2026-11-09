@@ -8,5 +8,14 @@ cask "mqscx" do
   depends_on arch: :arm64
   depends_on macos: :ventura                                            
   binary "mqscx"
-  caveats "Requires lic file from MQGem. Set MQGEML to reference your mqgem.lic file"
+  caveats <<~EOS
+    Requires licence file from MQGem. Set MQGEML to reference your mqgem.lic file.
+  EOS
+  unless which("dspmqver")
+    caveats <<~EOS
+      
+      Warning: IBM MQ macOS toolkit was not detected in your PATH. 
+      Please ensure it is installed for mqscx to function correctly.
+    EOS
+  end
 end
