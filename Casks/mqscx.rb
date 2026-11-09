@@ -11,6 +11,8 @@ cask "mqscx" do
   caveats <<~EOS
     Requires licence file from MQGem. Set MQGEML to reference your mqgem.lic file.
 
-    This tool also requires the IBM MQ macOS toolkit to be installed.
+    mqscx requires the IBM MQ Toolkit for macOS to be installed.
+    Before running mqscx, ensure you have initialized the MQ environment:
+      . setmqenv -s
   EOS
 end
