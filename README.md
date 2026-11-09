@@ -29,5 +29,6 @@ brew upgrade mqscx
 * **OS Support:** macOS 13 (Ventura) or newer (Apple Silicon / ARM64).
 * **Dependency:** Requires the IBM MQ macOS client libraries to be installed on your system. 
 * **Licensing:** Running operations requires a valid license file from MQGem Software. Please visit our website to purchase a license or request a trial.
+* **Software License Agreement (SLA):** By installing these utilities via Homebrew, you, your company, or the legal entity you represent explicitly agree to be legally bound by the [MQGem Software License Agreement (PDF Link)](https://www.mqgem.com/eula/mqscx_licence_agreement.pdf).
 
 For support, queries, or comments, please contact [MQGem Support](mailto:support@mqgem.com).
