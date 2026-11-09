@@ -9,6 +9,10 @@ cask "mqscx" do
   depends_on macos: :ventura                                            
   binary "mqscx"
   caveats <<~EOS
+    By installing this software via Homebrew, you agree to the terms of the 
+    MQGem Software License Agreement: 
+        https://www.mqgem.com/eula/mqscx_licence_agreement.pdf
+   
     Requires licence file from MQGem. Set MQGEML to reference your mqgem.lic file.
 
     mqscx requires the IBM MQ Toolkit for macOS to be installed.
