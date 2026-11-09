@@ -10,12 +10,7 @@ cask "mqscx" do
   binary "mqscx"
   caveats <<~EOS
     Requires licence file from MQGem. Set MQGEML to reference your mqgem.lic file.
+
+    This tool also requires the IBM MQ macOS toolkit to be installed.
   EOS
-  unless File.exist?("/opt/mqm/bin/dspmqver")
-    caveats <<~EOS
-      
-      Warning: IBM MQ macOS toolkit was not detected in your PATH. 
-      Please ensure it is installed for mqscx to function correctly.
-    EOS
-  end
 end
